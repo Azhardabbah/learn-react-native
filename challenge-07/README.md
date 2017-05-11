@@ -17,8 +17,14 @@ If you’re interested in learning more about the TOTP algorithm, you can check 
 ## <a name='TOC'>Summary</a>
 
 02. [Objectives](#objectives)
-02. [Setup](#setup)
-02. [Pointers](#pointers)
+03. [Summary](#TOC)
+04. [Objective](#objective)
+05. [A - Getting Setup](#sub-challenge-A)
+06. [B - Displaying the codes](#sub-challenge-B)
+07. [C - Accepting and Storing User Input](#sub-challenge-C)
+08. [D - Routing (Optional)](#sub-challenge-D)
+09. [E - Adding Copy-to-Clipboard Functionality](#sub-challenge-E)
+10. [F - Adding QR-reading Functionality](#sub-challenge-F)
 42. [Credits](#credits)
 
 ## <a name='objective'>Objective</a>
