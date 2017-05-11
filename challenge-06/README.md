@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 06
+# Learn React Native :: challenge 06
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **branding**.
+> :coffee: This challenge is about **branding**.
 
 ## <a name='TOC'>Summary</a>
 
@@ -15,7 +15,7 @@
 
 We’ll add a custom icon and launch screen to the app that you made in the last challenge.
 
-XXX
+![](./assets/screen-icon.png)
 
 Replace this lame icon with a better one. And add a custom launch screen too. (A launch screen is the screen that the user sees while the app is starting. By default React Native builds a launch screen that displays the name of your app.)
 
@@ -40,33 +40,33 @@ Grab the assets included in the asset directory.
 
 Time to dive into Xcode. If you don’t already have Xcode open, open `ios/_yourprojectname_.xcproject` in Xcode now. There will be a series of icons on the top of the left-most panel. Click to the Project Navigator. This is a sort of directory view of your project.
 
-XXX
+![](./assets/screen-xcode-1.png)
 
 Find and click on `Image.xcassets` (this is a directory containing XCode Assets, hence the name). Within the main content panel, you should now see a list of image assets with only one entry: AppIcon. AppIcon is actually a directory where Xcode expects to find your app’s icons.
 
-XXX
+![](./assets/screen-xcode-2.png)
 
 When you click on AppIcon, you’ll see a bunch of labeled blank spaces. These are the various sizes needed for an app icon on different Apple devices.
 
 There are two ways to add actual images for you app icon. You can drag-and-drop images onto the blank spaces for AppIcon, or you can add a new directory of properly prepared directory of icons, and tell your app to use that directory as the icon. (Many icon generators will generate this kind of directory for you.)
 
-For this challenge, let’s use the latter technique. Drag and drop `AppIcon.appiconset` from your workshop files into the panel containing AppIcon. Remove the old, empty AppIcon directory.
+For this challenge, let’s use the latter technique. Drag and drop `AppIcon.appiconset` from your challenge files into the panel containing AppIcon. Remove the old, empty AppIcon directory.
 
 Now we need to tell our app where to find our new icons. Go to your project’s general settings (which is more difficult than it might sound… see below).
 
-XXX
+![](./assets/screen-xcode-3.gif)
 
 ##### Adding a Launch Screen
 
 In the Project Navigator in Xcode, find and click on `LaunchScreen.xib` (.xib == Xcode Interface Builder in case you’re curious).
 
-XXX
+![](./assets/screen-xcode-4.png)
 
 This is your application’s default launch screen. If you’re an Xcode Interface Builder pro, you can create your own custom launch screen right here. If you’re not, you can tell your app just to use an image instead.
 
 Once your launch screen assets are ready, find and click on `Images.xcassets` in the Project Navigator. Click the “+” at the bottom left of the main content panel, and choose to add a new iOS launch image.
 
-XXX
+![](./assets/screen-xcode-5.png)
 
 You’ll now see another set of blank spaces just like we saw when we looked at AppIcon. This time we’ll drag our images into this interface. Drag-and-drop your launch screen images onto the blank spaces to populate the directory.
 
@@ -80,7 +80,7 @@ To view your app’s launch screen, you may have to quit the app in the Simulato
 
 ## <a name='gogogo'>Go go go!</a>
 
-Install an app icon and a launch screen. When you’re done move on to [workshop #07](https://github.com/majdi/learn-react-native/tree/master/workshop-07) :wink:
+Install an app icon and a launch screen. When you’re done move on to [challenge #07](https://github.com/majdi/learn-react-native/tree/master/challenge-07) :wink:
 
 ## <a name='credits'>Credits</a>
 

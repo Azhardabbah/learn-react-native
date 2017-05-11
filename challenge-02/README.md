@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 02
+# Learn React Native :: challenge 02
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **simulator orientation**
+> :coffee: This challenge is about **simulator orientation**
 
 ## <a name='TOC'>Summary</a>
 
@@ -13,9 +13,7 @@
 
 ## <a name='objective'>Objective</a>
 
-The goal with this challenge is to gain familiarity with React Native’s style and layout capabilities. To do this, you’ll try to build the following screen:
-
-XXX
+The goal of this challenge it to become comfortable with light debugging and the basic React Native dev tools. You’ll debug some errors, and then spend some time poking around the iOS simulator.
 
 ## <a name='setup'>Setup</a>
 
@@ -34,22 +32,24 @@ import React, {
 
 class FirstApp extends Component {
   render() {
+    imNotDefined
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Next challenge!
-        </Text>
-        <Text style={styles.instructions}>
-          Try to build a replica of the screen{'\n'}
-          shown in the challenge directions.
-        </Text>
-        <Text style={styles.instructions}>
-          (The one below.)
+          Nice work!
         </Text>
         <Image
-          style={styles.targetImage}
-          source={{ uri: 'https://s3.amazonaws.com/vigesharing-is-vigecaring/lkurtz/rnwksp-c3-target.png' }}
+          style={styles.image}
+          source={{uri: 'https://s3.amazonaws.com/vigesharing-is-vigecaring/lkurtz/rn-workshop-thumbs-up.gif'}}
         />
+        <Text style={styles.instructions}>
+          Now take a look around a bit with the dev tools.
+        </Text>
+        <Text style={styles.instructions}>
+          Remember: press Cmd+R to reload,{'\n'}
+          Cmd+D or shake for dev menu
+        </Text>
       </View>
     );
   }
@@ -60,116 +60,67 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#eee',
+    backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    imNotAProperty: 42
   },
   instructions: {
-    marginTop: 10,
     textAlign: 'center',
+    color: '#333333',
+    marginBottom: 10,
   },
-  targetImage: {
-    width: 150,
-    height: 300,
-    marginTop: 25,
-  }
+  image: {
+    height: 100,
+    margin: 25,
+    width: 200,
+  },
 });
 
 AppRegistry.registerComponent('FirstApp', () => FirstApp);
 ```
 
+Save the file, then run the simulator again.
+
+
 ## <a name='pointers'>Pointers</a>
 
-### Intro to Pseudo-CSS
+### Dealing With Errors
 
-React Native does not implement CSS, however it uses JavaScript-based tooling this is inspired by and feels very much like CSS in certain ways.
+Once you complete the setup instructions, you might be thinking "...what the heck?"
 
-##### Styles are represented as JSON.
+![](./assets/screen-error.png)
 
-```css
-.page {
-  background-color: orange;
-  height: 42px;
-  border: 1px solid blue;
-}
-```
+This is the exception screen. If you’re like me, you’ll come to know this screen quite well.
 
-...would be...
+You’ve already noticed that the screen contains a helpful error message. It also includes a stack trace of the exception underneath the error. Since this is an iPhone simulator, you can’t scroll with a mouse wheel. Instead use your cursor as a finger. Depress the mouse button to touch your virtual finger to the screen.
 
-```css
-{
-  page: {
-    backgroundColor: 'orange',
-    height: 42,
-    borderColor: 'blue',
-    borderWidth: 1
-  }
-}
-```
+Do you see where the error is coming from? The majority of stack traces will reference files in the React Native core. Let’s focus on the files we control. What file in the trace looks familiar? Track down and destroy the bug, then click “Reload JS” (or hit Cmd+R) to see if you got it.
 
-Styles don’t cascade.
+Repeat until the file is error-free.
 
-```html
-<View style={{ color: 'orange' }} >
-  <Text>I'm not orange.</Text>
-</View>
-```
+##### Exploring Sim Functions
 
-But you can build up styles compositionally:
+In the simulator, hit Cmd+Shift+H.
 
-```html
-<View>
-  <Text style={ [styles.defaultText, styles.orange, styles.centered] }>I'm orange and centered.</Text>
-</View>
+Nice, you just hit the phone’s home button. Yep, the simulator is simulating an entire phone, not just your application. You can perform simulated hardware actions (like hitting the home button, locking, etc.) via the Hardware item in the Simulator’s menubar. Check them out.
 
-// ...
+##### Exploring the Dev Menu
 
-const styles = StyleSheet.create({
-  defaultText: {
-    fontSize: 12,
-  },
-  orange: {
-    color: 'orange',
-  },
-  centered: {
-    textAlign: 'center',
-  },
-})
-```
+React Native ships will a set of useful simulator dev tools. You can take a look at these tools by hitting Cmd+D in the simulator (or shaking comically hard if you’re running on an actual device). Explore around and get a sense for what each of these provides.
 
-##### Layout is flexbox-based.
-
-You won’t find any `float` in React Native styles. Flexbox is a more powerful and elegant alternative, but can have a bit of a learning curve. If you’re new to Flexbox layouts, the [CSS-Tricks Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) is a teriffic resource.
-
-## <a name='useful-documentation'>Useful Documentation</a>
-
-- Overall Style Docs
-- View Properties
-- Image Properties
-- Text Properties
-- Flex Properties
-- Transform Properties
+Two notes:
+- You’ll need to install an additional dependency to view generated systraces… don’t worry about that for now.
+- Chrome debugging can be really useful tool for complex debugging, but it can be pretty finicky. Your mileage may vary.
 
 ## <a name='gogogo'>Go go go</a>
 
-Learning time is over. It’s time to build. How close can you get to the screen below?
+Debug the app. Play with the simulator. Expore the React Native dev tools.
 
-XXX
-
-You can find the same image included on the above screen in the assets directory.
-
-And remember that `<View>` is analogous to HTML’s `<div>`, `<Text>` is analogous to `<p>`, and `<Image>` is analogous to `<img>`.
-
-When you’re satisfied move on to Challenge 4.
-
-> If this style challenge felt too easy for you, spend some more time going crazy, pushing the limits of React Native styling. Then post a screenshot of your crazy.
-
-## <a name='extras'>Extras</a>
-
-f you’re annoyed by this black status bar text on the dark grey background, check out the [StatusBarIOS API](https://facebook.github.io/react-native/docs/statusbarios.html#content) docs and change it to a lighter color.
+Then, with Live Reload enabled, change some content in the components within `index.ios.js`.
 
 #### Next
 

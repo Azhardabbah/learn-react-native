@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 01
+# Learn React Native :: Challenge 01
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **getting started**
+> :coffee: This challenge is about **getting started**
 
 ## <a name='TOC'>Summary</a>
 
@@ -30,18 +30,14 @@ Once these dependencies have been successfully installed, you’re ready to begi
 
 ### Project Initialization
 
-##### What to Do Today
-
-Download the `srcs.zip` file. Go into the unzipped directory (should be named `FirstApp`) and run `npm rebuild`.
-
-##### What You Would Usually Do (But Not Today)
-
 https://facebook.github.io/react-native/docs/getting-started.html#quick-start is the canonical source for information about starting new projects.
 Install React Native’s handy CLI: `npm install -g react-native-cli`.
 
-##### Why aren’t we doing this today?
+##### Create a new skeleton project
 
 Running `react-native init` will download the newest version of React Native and all of its dependencies. That’s around ~500MB in total.
+
+Now just create an app called `FirstApp`
 
 ### Running the Project
 
@@ -65,7 +61,7 @@ The iPhone you’re simulating probably has more pixels than the laptop you’re
 
 Go get the project running in the iOS simulator.
 
-[XXX](./assets/screen-app.png)
+![](./assets/screen-app.png)
 
 When you see the above screen, congrats. You’re a **hero**.
 

@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 05
+# Learn React Native :: challenge 05
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **miles from home**.
+> :coffee: This challenge is about **miles from home**.
 
 ## <a name='TOC'>Summary</a>
 
@@ -13,12 +13,12 @@
 
 ## <a name='objective'>Objective</a>
 
-Access to accurate and timely location information is a distinguishing feature of native applications. In this workshop, we’ll explore the Geolocation API exposed by React Native.
+Access to accurate and timely location information is a distinguishing feature of native applications. In this challenge, we’ll explore the Geolocation API exposed by React Native.
 
 Build an app that shows your location on a map (updating in real-time), and how many miles away from your hometown you are.
 Here’s an example of what that could look like:
 
-XXX
+![](./assets/screen-app.png)
 
 ## <a name='setup'>Setup</a>
 
@@ -182,7 +182,7 @@ Semi-transparent colors in React Native work the same as in CSS. To set such a c
 
 ## <a name='gogogo'>Go go go!</a>
 
-Make the app. When you’re done move on to [workshop #06](https://github.com/majdi/learn-react-native/tree/master/workshop-06) :wink:
+Make the app. When you’re done move on to [challenge #06](https://github.com/majdi/learn-react-native/tree/master/challenge-06) :wink:
 
 ## <a name='credits'>Credits</a>
 

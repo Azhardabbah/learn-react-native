@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 04
+# Learn React Native :: challenge 04
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **rockets**
+> :coffee: This challenge is about **rockets**
 
 ## <a name='TOC'>Summary</a>
 
@@ -19,9 +19,9 @@ Make an app with a button that fires a rocket. The button should have some sort 
 
 Below is one example of what the app could look like, but the functionality and style of your own app is completely up to you!
 
-[XXX](./assets/screen-switch-off.png)
-[XXX](./assets/screen-switch-on.png)
-[XXX](./assets/screen-spacex.png)
+![](./assets/screen-switch-off.png)
+![](./assets/screen-switch-on.png)
+![](./assets/screen-spacex.png)
 
 Find your own launch image, or use the one included in the asset directory.
 

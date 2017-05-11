@@ -1,4 +1,4 @@
-![Lear](https://dl.dropboxusercontent.com/u/28401099/mangoh.rocks/hands-on-session-title.png)
+![Learn React Native](https://dl.dropboxusercontent.com/u/28401099/mhirba/jntech/learn-react-native/gh-title.png)
 
 ***
 

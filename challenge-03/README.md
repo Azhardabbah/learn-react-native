@@ -1,8 +1,8 @@
-# Learn React Native :: Workshop 03
+# Learn React Native :: challenge 03
 
 [![](https://img.shields.io/badge/React%20Native-v0.44-blue.svg)](https://facebook.github.io/react-native/)
 
-> :coffee: This workshop is about **simulator orientation**
+> :coffee: This challenge is about **simulator orientation**
 
 ## <a name='TOC'>Summary</a>
 
@@ -16,7 +16,7 @@
 The goal with this challenge is to gain familiarity with React Native’s style
 and layout capabilities. To do this, you’ll try to build the following screen:
 
-[XXX](./assets/screen-app.png)
+![](./assets/screen-app.png)
 
 ## <a name='setup'>Setup</a>
 
@@ -165,7 +165,7 @@ If you’re new to Flexbox layouts, the [CSS-Tricks Flexbox Guide](https://css-t
 
 Learning time is over. It’s time to build. How close can you get to the screen below?
 
-[XXX](./assets/screen-app.png)
+![](./assets/screen-app.png)
 
 You can find the same image included on the above screen in the assets directory.
 
@@ -177,7 +177,7 @@ Post a screenshot of your app in the `#progress` channel, then move on to the ne
 
 ## <a name='extras'>Extras</a>
 
-[XXX](./assets/screen-topbar.png)
+![](./assets/screen-topbar.png)
 
 f you’re annoyed by this black status bar text on the dark grey background, check out the [StatusBarIOS API](https://facebook.github.io/react-native/docs/statusbarios.html#content) docs and change it to a lighter color.
 
