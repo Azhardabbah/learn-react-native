@@ -41,7 +41,7 @@ class FirstApp extends Component {
         </Text>
         <Image
           style={styles.image}
-          source={{uri: 'https://s3.amazonaws.com/vigesharing-is-vigecaring/lkurtz/rn-workshop-thumbs-up.gif'}}
+          source={{uri: './assets/chopper.gif'}}
         />
         <Text style={styles.instructions}>
           Now take a look around a bit with the dev tools.
@@ -125,7 +125,7 @@ Then, with Live Reload enabled, change some content in the components within `in
 #### Next
 
 Well, you have just finished this challenge... easy right? :wink:<br />
-Go to the [challenge #04](https://github.com/majdi/learn-react-native/tree/master/challenge-04).
+Go to the [challenge #03](https://github.com/majdi/learn-react-native/tree/master/challenge-03).
 
 ## <a name='credits'>Credits</a>
 
