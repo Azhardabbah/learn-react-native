@@ -10,9 +10,9 @@ We’re gonna build a **Time-based One Time Password (TOTP)** generator app (jus
 
 If you’re unfamiliar with TOTP-based authentication, it goes like this: When I setup 2-factor authentication for my Gmail account, Gmail generates a secret which I record in my TOTP app. Using this shared secret, both my app and Gmail can generate the same time-sensitive passcodes at the same time. When Gmail asks for my 2nd factor, I provide the code my app generates, Gmail checks to see if the code is what it should be given the current time, and Gmail lets me in.
 
-If you’re unfamiliar with TOTP-based 2-factor auth, watch this video to see how it in action with Google’s Authenticator TOTP app.
+If you’re unfamiliar with TOTP-based 2-factor auth, watch [this video](https://youtu.be/Epab5LtUIvI?t=1m30s) to see how it in action with Google’s Authenticator TOTP app.
 
-If you’re interested in learning more about the TOTP algorithm, you can check out [this article](http://jacob.jkrall.net/totp/), but that won’t be necessary to make this app (we’ve handled the TOTP algorithm for you).
+If you’re interested in learning more about the TOTP algorithm, you can check out [this page](https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm), but that won’t be necessary to make this app (we’ve handled the TOTP algorithm for you).
 
 ## <a name='TOC'>Summary</a>
 
@@ -77,18 +77,18 @@ Display a list generated codes and their lifespans. Since the codes are time-sen
 ##### TOTP Algorithm
 
 You don’t need to implement the TOTP algo. We’ve done it for you!
-Just drop `sha.js` and `totp.js` from the incs files into your project and import them wherever you need them.
+Just drop `sha.js` and `totp.js` from the misc directory into your project and import them wherever you need them.
 Below is an example of how to use the provided totp library to generate codes and code lifespans:
 
 ```js
-import generateOTP from '../lib/totp' // or wherever you placed totp.js
+import generateOTP from '../misc/totp' // or wherever you placed totp.js
 
 const MyComponent = React.createClass({
   getInitialState() {
     return {
       generators: [
         {
-          name: 'Gmail <js-ios@gmail.com>',
+          name: 'Gmail <react.rocks@gmail.com>',
           secret: 'abcdefghijklmnop'
         }
       ]
@@ -269,8 +269,7 @@ setRightButtonAction() {
 
 Much of the complication around using Navigator is related to passed properties.
 Using a more advanced application architecture like [`Flux`](https://facebook.github.io/flux/)
-can reduce your application’s reliance on passed props and make routing much easier. [`Microcosm`](https://github.com/vigetlabs/microcosm) and [`Redux`](https://github.com/reactjs/redux)
-are good libraries to look at if you’re interested in moving to Flux.
+can reduce your application’s reliance on passed props and make routing much easier. [`Redux`](https://github.com/reactjs/redux) is a good library to look at if you’re interested in moving to Flux.
 
 ### Go go go!
 
@@ -289,8 +288,7 @@ it’s clicked, so that the user can just paste the code wherever they need it
 ### Pointers
 
 Clipboard interaction is actually part of the React Native core now
-(it’s an [undocumented feature](https://github.com/facebook/react-native/blob/46a8f1d8e0f2f779bc09395f02be1d0b71587482/Libraries/Components/Clipboard/Clipboard.js))… but let’s try out adding a 3rd party
-dependency for learning’s sake. Try `react-native-clipboard`.
+(it’s an [undocumented feature](https://github.com/facebook/react-native/blob/46a8f1d8e0f2f779bc09395f02be1d0b71587482/Libraries/Components/Clipboard/Clipboard.js))… but let’s try out adding a 3rd party dependency for learning’s sake. Try `react-native-clipboard`.
 
 ### Installing 3rd Party Libraries
 
