@@ -17,6 +17,7 @@ Visit <a href="http://jntech.co">learn.jntech.co</a> for more contents :rocket:
 4. [Challenge 04](https://github.com/majdi/learn-react-native/tree/master/challenge-04)
 5. [Challenge 05](https://github.com/majdi/learn-react-native/tree/master/challenge-05)
 6. [Challenge 06](https://github.com/majdi/learn-react-native/tree/master/challenge-06)
+7. [Challenge 07](https://github.com/majdi/learn-react-native/tree/master/challenge-07)
 
 ## More
 
